@@ -1,3 +1,10 @@
+window.addEventListener("load", () => {
+    document.getElementsByTagName("footer")[0].style.width = window.innerWidth
+})
+window.addEventListener("resize", () => {
+    document.getElementsByTagName("footer")[0].style.width = window.innerWidth
+
+})
 function openAnswer(index) {
     let answer_element = document.getElementById("answer_" + index);
     let question_element = document.getElementById("question_button_" + index);
@@ -16,7 +23,6 @@ function openAnswer(index) {
     }
 
 }
-
 const toggleHeader = () => {
     const element = document.getElementById("header_toggle");
     if (element.style.display === "none" || element.style.display === "") {
